@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 3219177471150929881}
     - target: {fileID: 706571340672811517, guid: 3d7f5ff398b559447ab222970d2a19a4, type: 3}
       propertyPath: m_onMoveBackwardToForwardPercent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetLeftToRightPercent
+      value: SetBackwardToForwardPercent
       objectReference: {fileID: 0}
     - target: {fileID: 706571340672811517, guid: 3d7f5ff398b559447ab222970d2a19a4, type: 3}
       propertyPath: m_onMoveDownToUpPercent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
