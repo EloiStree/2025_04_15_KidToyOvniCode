@@ -2,10 +2,10 @@
 {                                                                                
   "name": "be.elab.ovnitoy",                              
   "displayName": "Kid Ovni Toy",                        
-  "version": "0.0.1",                         
+  "version": "2025.4.15",                         
   "unity": "2018.1",                             
   "unityRelease": "",                             
-  "description": "You package description",                         
+  "description": "Toy game experiment of how you can make an OVNI drone moving compare to the player position or player controller.",                         
   "keywords": ["Script","Tool"],                       
   "dependencies":{},     
   "relatedPackages":{},     
