@@ -934,6 +934,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6198572253310866914, guid: 019eb0d9028b1604eac4d49566a5d500, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6840700418304191171, guid: 019eb0d9028b1604eac4d49566a5d500, type: 3}
       propertyPath: m_Name
       value: OVNI Drone  From Controller
