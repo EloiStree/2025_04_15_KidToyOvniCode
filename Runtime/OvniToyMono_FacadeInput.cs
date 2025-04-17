@@ -7,7 +7,7 @@ namespace Eloi.OvniToy {
     /// <summary>
     /// I am a clas that make the abstraction between outside code and inside code.
     /// </summary>
-    /// 
+    
 
     public class OvniToyMono_FacadeInput : MonoBehaviour
 {

@@ -108,6 +108,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &7987283215556933004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2750218293654762481}
+  m_Layer: 0
+  m_Name: CockpitAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2750218293654762481
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7987283215556933004}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0000000021088, y: 0.0098, z: 0}
+  m_LocalScale: {x: 0.046634495, y: 0.046634495, z: 0.046634495}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8734041749179723413}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9173704852659006925
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,6 +148,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8734041749179723413}
+  - component: {fileID: 5183187357158753805}
   m_Layer: 0
   m_Name: OVNI 3D Model
   m_TagString: Untagged
@@ -139,8 +171,98 @@ Transform:
   m_Children:
   - {fileID: 6133883262906703652}
   - {fileID: 4882224722985281194}
+  - {fileID: 2750218293654762481}
+  - {fileID: 5938646190073704536}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5183187357158753805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9173704852659006925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1d17a9cc6485241b67323388f30ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_whereToCreate: {fileID: 2750218293654762481}
+  m_localScale: 1
+  m_bodyRenderer:
+  - {fileID: 4630934017361974658}
+  m_createdInstance: {fileID: 0}
+--- !u!1 &9182393940916752089
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5938646190073704536}
+  - component: {fileID: 8318837230046487685}
+  m_Layer: 0
+  m_Name: Set Default Custom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5938646190073704536
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9182393940916752089}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8734041749179723413}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8318837230046487685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9182393940916752089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c99294f323deb442b43e9075c4c3f47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_onTick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5183187357158753805}
+        m_TargetAssemblyTypeName: OVNIMono_SetCockpitAndTexture, Assembly-CSharp
+        m_MethodName: SetTexture2D
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2800000, guid: 25301684a7514844490f795aee9889aa, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Texture2D, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5183187357158753805}
+        m_TargetAssemblyTypeName: OVNIMono_SetCockpitAndTexture, Assembly-CSharp
+        m_MethodName: SetCockPit
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6002635946488053224, guid: ab5e1cfda4c427840a142a9bd02f2271, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &4921199614475338049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -206,6 +328,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5204b02c752b4804780a3942015ac1ed, type: 3}
+--- !u!23 &4630934017361974658 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 292730721044632771, guid: 5204b02c752b4804780a3942015ac1ed, type: 3}
+  m_PrefabInstance: {fileID: 4921199614475338049}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4882224722985281194 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5204b02c752b4804780a3942015ac1ed, type: 3}
